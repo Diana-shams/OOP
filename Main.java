@@ -1,18 +1,13 @@
-
-import java.util.Date;
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-
-        Account A=new Account(1122,20000);
-        A.withdraw(2500);
-        A.deposit(3000);
-        A.setAnnualInterestRate(4.5);
-        System.out.println(A.getBalance());
-        System.out.println(A.getMonthlyInterest());
-        System.out.println(A.getDateCreated());
-
-
+        Triangle t=new Triangle();
+        Scanner myobj=new Scanner();
+        t.side1=myobj.nextDouble();
+        t.side2=myobj.nextDouble();
+        t.side3=myobj.nextDouble();
+        t.color=myobj.nextLine();
+        t.filled=myobj.nextBoolean();
+        System.out.println(t.area(),t.permiter(),t.filled,t.color);
     }
 }
